@@ -1,0 +1,247 @@
+* {
+    font-family: "Fira Sans", sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #d3d8f0;
+    color: #eca576;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+.usersStyles {
+  width: 550px;
+}
+  
+
+.appStyles {
+  margin: 20px auto;
+  width: 600px;
+  .container {
+    background: white;
+    border: 2px solid #530202;
+    //border-radius: 6px;
+    padding:15px;
+    display: flex;
+    justify-content: space-between;
+    //flex-direction: row-reverse;
+
+  }
+  .containerNav
+  {
+    background-color: rgb(245, 81, 11);
+    border: 2px solid #530202;
+  }
+}
+
+.navStyles {
+    a {
+      color: black-blue;
+      padding: 12px 12px;
+      text-decoration: none;
+      &.active {
+        color: White;
+       
+      }
+      font-weight: bold;
+    }
+
+
+    padding: 10px;
+
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+.userCardStyles {
+  display: inline-flex;
+  flex-direction: column;
+  
+  width: 250px;   
+  height: 250px;
+  color: #fff;
+  background: #2a2c37;
+  border-radius: 6px;
+  text-decoration: none;
+  padding: 15px;
+
+  margin: 12px;
+  transition: transform 0.1s ease-in-out, background 0.1s ease-in-out,
+    box-shadow 0.1s ease-in-out;
+  &:hover {
+    transform: translate(0, -3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.035);
+  }
+  .userCard {
+
+    &-Name {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+    &-Email {
+      color: #50fa7b;
+      font-size: 1rem;
+      
+    }
+    &-Phone {
+      color: #ff79c6;
+      font-size: 1rem;
+     
+    }
+    &-Username {
+      color: #8be9fd;
+      font-size: 1rem;
+      
+    }
+
+    
+  }
+}
+
+.buttonsAdminDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+.buttonsAdmin
+{
+        text-decoration: none;
+        display: inline-block;
+        flex-direction: row;
+        width: 70px;
+        border: 2px solid  rgb(245, 81, 11);
+        color:  rgb(245, 81, 11);
+        padding:2px;
+        border-radius: 6px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-left: 10px;
+        cursor: pointer;
+}
+.ButtonsEdit
+{
+    text-decoration: none;
+    display: inline-block;
+    flex-direction: row;
+    width: 70px;
+    border: 2px solid  rgb(245, 81, 11);
+    color:  rgb(245, 81, 11);
+    padding:2px;
+    border-radius: 6px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.userCardStylesPreview {
+    //display:inline-flex;
+    //flex-direction: column;
+    width: auto;   
+    height: auto;
+    color: #fff;
+    background: #2a2c37;
+    border-radius: 6px;
+    text-decoration: none;
+    padding: 15px;
+  
+    margin: 10px;
+    transition: transform 0.1s ease-in-out, background 0.1s ease-in-out,
+      box-shadow 0.1s ease-in-out;
+    &:hover {
+      transform: translate(0, -3px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.035);
+    }
+   
+   
+    .userCard {
+  
+      &-Name {
+        font-size: 1.2rem;
+        margin: 0;
+      }
+      &-Email {
+        color: #50fa7b;
+        font-size: 1rem;
+        
+      }
+      &-Phone {
+        color: #ff79c6;
+        font-size: 1rem;
+       
+      }
+      &-Username {
+        color: #8be9fd;
+        font-size: 1rem;
+        
+      }
+    }
+  }
+  .ButtonBack {
+    text-decoration: none;
+    border: 2px solid  rgb(245, 81, 11);
+    color:  rgb(245, 81, 11);
+    padding:10px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+.UserEdit {
+    &-Input {
+      width: 100%;
+      border: 2px solid transparent;
+      color: rgb(22, 21, 21);
+      background: #d8d8d9;
+      padding: 10px 15px;
+      margin-bottom: 5px;
+      border-radius: 6px;
+      outline: 0;
+      &:focus {
+        border-color: #ff7702;
+      }
+    }
+    &-Textarea {
+      min-height: 80px;
+      resize: none;
+    }
+    &-Button {
+      border: 2px solid #ff7702;
+      color: #ff7702;
+      background: none;
+      padding: 10px;
+      border-radius: 6px;
+      margin-right: 5px;
+      outline: 0;
+      cursor: pointer;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+
+  .Admin {
+    &-Header {
+      display: flex;
+        flex-direction: row;
+      align-items: center;
+    }
+    &-New {
+      text-decoration: none;
+      border: 2px solid  rgb(245, 81, 11);
+      color:  rgb(245, 81, 11);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-left: auto;
+      cursor: pointer;
+    }
+
+  }
